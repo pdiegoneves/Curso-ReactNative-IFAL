@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculador de Boletim</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="titulo">
+            Calculadora de Boletim
+        </h1>
+        <div class="materia input">
+            <label for="materia">Matéria</label>
+            <input type="text" name="materia" id="materia">
+        </div>
+        <div class="media-bimestre-1 input">
+          <label for="media-bimestre-1">Média 1º Bimestre</label>
+          <input
+            type="number"
+            name="media-bimestre-1"
+            id="media-bimestre-1"
+            min="0"
+            max="10"
+            step="0.25"
+          />
+        </div>
+        <div class="media-bimestre-2 input">
+          <label for="media-bimestre-2">Média 2º Bimestre</label>
+          <input
+            type="number"
+            name="media-bimestre-2"
+            id="media-bimestre-2"
+            min="0"
+            max="10"
+            step="0.25"
+          />
+        </div>
+        <div class="media-bimestre-3 input">
+          <label for="media-bimestre-3">Média 3º Bimestre</label>
+          <input
+            type="number"
+            name="media-bimestre-3"
+            id="media-bimestre-3"
+            min="0"
+            max="10"
+            step="0.25"
+          />
+        </div>
+        <div class="media-bimestre-4 input">
+          <label for="media-bimestre-4s">Média 4º Bimestre</label>
+          <input
+            type="number"
+            name="media-bimestre-4"
+            id="media-bimestre-4"
+            min="0"
+            max="10"
+            step="0.25"
+          />
+        </div>
+        <button #id="calcular" class="btn">Calcular Média</button>
+        <div class="resultados">
+            <table class="">
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>1º B</th>
+                        <th>2º B</th>
+                        <th>3º B</th>
+                        <th>4º B</th>
+                        <th>Média</th>
+                        <th>Resultado</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>

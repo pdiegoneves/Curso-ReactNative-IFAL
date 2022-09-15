@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    ". . titulo titulo . ."
+    ". materia materia . . ."
+    ". media-bimestre-1 media-bimestre-2 media-bimestre-3 media-bimestre-4 ."
+    " . . btn btn . ."
+    "resultados resultados resultados resultados resultados resultados";
+}
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+}
+
+.materia {
+    grid-area: materia;
+}
+
+.media-bimestre-1 {
+    grid-area: media-bimestre-1;
+}
+.media-bimestre-2 {
+    grid-area: media-bimestre-2;
+}
+.media-bimestre-3 {
+    grid-area: media-bimestre-3;
+}
+.media-bimestre-4 {
+    grid-area: media-bimestre-4;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 15vw;
+    margin: 10px;
+}
+
+.materia {
+    width: 80%;
+}
+
+.input input {
+    height: 2em;
+    padding: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 7%;
+}
+
+.input label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.btn {
+    grid-area: btn;
+    height: 2em;
+    font-size: 1.5em;
+    margin: 10px;
+    background-color: aquamarine;
+}
+
+.hidden {
+    display: none;
+}
+
+.resultados {
+    grid-area: resultados;
+}
+
+.resultados table {
+    width: 100%;
+    border: 2px solid #333;
+}
+
+.resultados table thead {
+    background-color: antiquewhite;
+}
