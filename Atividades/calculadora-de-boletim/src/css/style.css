@@ -85,3 +85,7 @@
 .resultados table thead {
     background-color: antiquewhite;
 }
+
+table tbody tr td {
+    text-align: center;
+}
