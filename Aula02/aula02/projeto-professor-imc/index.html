@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      label,
+      input {
+        font-weight: bold;
+        line-height: 1.5em;
+      }
+      input {
+        height: 1.5em;
+        font-size: 1.2em;
+        padding: 5px;
+      }
+      input[type='radio'] {
+        width: 1.5em;
+        height: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <form onsubmit="calcular(event)" action="">
+      <label for="peso">Digite o seu peso</label>
+      <input type="text" name="peso" id="peso" placeholder="Exemplo 75Kg" />
+      <br /><br />
+      <label for="altura">Digite a sua altura</label>
+      <input
+        type="text"
+        name="altura"
+        id="altura"
+        placeholder="Exemplo 1.80m"
+      />
+      <br /><br />
+      <label for="Sexo">Sexo</label><br />
+      Feminino<input class="radio" type="radio" name="sexo" value="feminino" />
+      Masculino<input
+        class="radio"
+        type="radio"
+        name="sexo"
+        value="masculino"
+      />
+      <br /><br />
+      <input type="submit" value="calcular IMC" />
+    </form>
+
+    <div id="resultado"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
